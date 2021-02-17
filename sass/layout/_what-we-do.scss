@@ -1,0 +1,61 @@
+.what-we-do{
+    padding-bottom: 94px;
+
+    & .container{
+        justify-content: center;
+    }
+
+    & .heading{
+        margin: 0;
+        margin-bottom: 50px;
+    
+        font-family: $font-roboto;
+        color: $color-heading;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+  }
+
+  .what-we-do-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+    & .what-we-do-items:not(:last-child) {
+        margin-right: 30px;
+  }
+
+  .what-we-do-items .img {
+    display: block;
+  }
+
+  .what-we-do-wrapper{
+    position: relative;
+  }
+
+  .what-we-do-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    margin: 0;
+    padding: 27px 82px;
+
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    background-color: $color-wrapper-text;
+  }
+}

@@ -1,0 +1,228 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    background-color: $color-hero-bg;
+
+    & .container {
+        display: flex;
+        align-items: baseline;
+      }
+  }
+/* ADRES FOOTER */
+  .footer-adress-container{
+    margin-right: 70px;
+
+    .logo-footer {
+        display: inline-block;
+        margin-bottom: 20px;
+       
+        font-family: $font-raleway;
+        color: $color-white;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+      }
+  }
+
+  .footer-adress-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+
+    & .footer-adress-items {
+        display: inline-block;
+
+        & .footer-link {
+            font-family: $font-roboto;
+            color: $color-footer-adres;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+        
+            transition: color 250ms $cubic;
+          }
+          
+          & .footer-link:hover,
+          & .footer-link:focus {
+            color: $color-accent;
+          }
+      }
+
+    & .footer-adress-items:not(:last-child) {
+        margin-bottom: 9px;
+    }
+  }
+
+  .footer-adress .footer-map-adress{
+    font-family: $font-roboto;
+    color: $color-white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    
+    transition: color 250ms $cubic;
+
+    .footer-adress-items &:hover,
+    .footer-adress-items &:focus {
+        color: $color-accent;
+    }
+  }
+
+  .footer-adress-items .footer-map-adress:hover,
+  .footer-adress-items .footer-map-adress:focus {
+    color: $color-accent;
+  }
+
+/* JOIN US */  
+
+.join-us-text{
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $color-white;
+  }
+
+  .social-list-join-us{
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    & .social-list-icons:not(:last-child){
+        margin-right: 10px;
+      }
+
+    & .social-items{
+        background-color: $color-sosial-link-footer;
+        color: $color-white;
+    
+        transition: background-color 250ms $cubic;
+      }
+
+      & .social-items:hover,
+      & .social-items:focus{
+        background-color: $color-accent;
+      }
+  }
+
+  .social-items{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $color-sosial-link;
+
+    transition: background-color 250ms $cubic, color 250ms $cubic;
+    
+    &:hover,
+    &:focus{
+        background-color: $color-accent;
+        color: $color-white;
+    }
+    .icon{
+        fill: currentColor;
+      }
+  }
+
+  /* SIGN FOOTER */
+
+  .sign-container{
+    margin-left: auto;
+
+    .sign-footer-text{
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: $font-roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: $color-white;
+      }
+  }
+
+  .footer-form{
+    display: flex;
+    align-items: center;
+
+    .sign-input-footer{
+        padding: 15px 16px;
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: #2F303A;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        color: $color-white;
+
+        &:focus{
+            border-color: $color-accent;
+            outline: none;
+        }
+
+        &::placeholder{
+            font-family: $font-roboto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+          }
+      }
+    
+      .sign-footer-button{
+        display: flex;
+        margin-left: 12px;
+        padding: 10px 28px 10px 31px;
+        align-items: center;
+        min-width: 200px;
+        height: 50px;
+        background-color: $color-accent;
+        border: 1px solid $color-accent;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+    
+        font-family: $font-roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        text-align: center;
+        letter-spacing: 0.06em;
+    
+        color: #FFFFFF;
+        transition: background-color 250ms $cubic;
+
+        &:focus,
+        &:hover{
+            background-color: $color-accent-button-form;
+            outline: none;
+        }
+
+        .icon-send{
+            margin-left: 8px;
+            fill: $color-white;
+          }
+      }
+  }
+ 

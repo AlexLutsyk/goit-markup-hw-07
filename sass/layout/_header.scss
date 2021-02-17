@@ -1,0 +1,103 @@
+.header{
+    margin: 0 auto;
+    max-width: 1600px;
+    border-bottom: 1px solid #ECECEC;
+  }
+
+  .logo {
+    margin-right: 93px;
+  
+    color: $color-logo;
+    font-family: $font-raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    &-accent{
+        color: $color-accent;
+    }
+  }
+
+  .nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    & .nav-items:not(:last-child){
+      margin-right: 50px;
+    }
+
+    & .nav-link {
+      display: block;
+      position: relative;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    
+      font-family: $font-roboto;
+      color: $color-heading;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+  
+      transition: color 250ms $cubic;
+
+      &:hover,
+      &:focus{
+        color: $color-accent;
+      }
+    }
+  }
+
+  .adress {
+    margin-left: auto;
+    &-list {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      .adress-items:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .adress-link {
+    display: flex; 
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    font-family: $font-roboto;
+    color: $color-paragraph;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color 250ms $cubic;
+
+    .icon-envelope{
+      display: inline-block;
+      margin-right: 10px;
+      fill: $color-paragraph;
+      transition: fill 250ms $cubic;
+    }
+      .icon-smartphone{
+      display: inline-block;
+      margin-right: 10px;
+      fill: $color-paragraph;
+      transition: fill 250ms $cubic;
+    }
+
+
+    &:focus .icon,
+    &:hover .icon{
+      fill: $color-accent;
+    }
+    &:focus,
+    &:hover{
+      color: $color-accent;
+    }
+  }
+
+  
