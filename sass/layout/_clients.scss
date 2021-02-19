@@ -2,7 +2,7 @@
     padding-top: 96px;
     padding-bottom: 92px;
 
-    & .container{
+  .container{
         display: block;
         align-items: center;
         width: 1200px;
@@ -12,7 +12,7 @@
         padding-left: 15px;
       }
 
-    &-heading{
+  &__heading{
         margin: 0;
         padding: 0;
         margin-bottom: 50px;
@@ -26,32 +26,34 @@
 
         color: $color-heading;
     }
-  }
+  
 
-  .clients-list{
+  &__list{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
+  }
 
-    .clients-link{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 170px;
-        height: 90px;
-        color: $color-sosial-link;
-        border: 1px solid $color-sosial-link;
-        border-radius: 4px;
-        fill: $color-paragraph;
-    
-        transition: border 250ms $cubic, color 250ms $cubic, fill 250ms $cubic;
+  &__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    color: $color-sosial-link;
+    border: 1px solid $color-sosial-link;
+    border-radius: 4px;
+    fill: $color-sosial-link;
 
-        &:hover,
-        &:focus{
-            color: $color-accent;
-            border: 1px solid $color-accent;
-            fill: $color-accent;
-        }
+    transition: border 250ms $cubic, color 250ms $cubic, fill 250ms $cubic;
+
+      &:hover,
+      &:focus{
+          color: $color-accent;
+          border: 1px solid $color-accent;
+          fill: $color-accent;
       }
   }
+
+}

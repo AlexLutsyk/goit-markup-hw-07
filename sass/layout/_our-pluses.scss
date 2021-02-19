@@ -1,32 +1,33 @@
 .our-pluses{
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  .container .our-pluses-items:not(:last-child) {
-    margin-right: 30px;
-  }
-  .our-pluses-list {
+  
+  &__list {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-
-    .our-pluses-items {
+  }
+  &__items {
       width: 270px;
 
-      & .text{
-        margin: 0;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.714;
-        letter-spacing: 0.03em;
-        color:$color-paragraph;
+      &:not(:last-child) {
+        margin-right: 30px;
       }
     }
 
-    .our-pluses-heading {
+    &__text{
+      margin: 0;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color:$color-paragraph;
+    }
+
+    &__heading {
       margin: 0;
       margin-bottom: 10px;
     
@@ -39,7 +40,7 @@
       text-transform: uppercase;
     }
 
-    .pluses-sprites{
+    &__sprite{
       display: flex;
       align-items: center;
       justify-content: center;
@@ -48,4 +49,5 @@
       background-color: $color-portfolio-button;
       border-radius: 4px;
     }
-  }
+  
+}

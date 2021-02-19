@@ -1,11 +1,11 @@
 .what-we-do{
     padding-bottom: 94px;
 
-    & .container{
+  .container{
         justify-content: center;
     }
 
-    & .heading{
+  &__heading{
         margin: 0;
         margin-bottom: 50px;
     
@@ -17,27 +17,29 @@
         text-align: center;
         letter-spacing: 0.03em;
     }
-  }
+  
 
-  .what-we-do-list {
+  &__list {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
 
-    & .what-we-do-items:not(:last-child) {
+  }
+
+  &__items:not(:last-child) {
         margin-right: 30px;
   }
 
-  .what-we-do-items .img {
+  &__img {
     display: block;
   }
 
-  .what-we-do-wrapper{
+  &__wrapper{
     position: relative;
   }
 
-  .what-we-do-text{
+  &__text{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -54,8 +56,9 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $color-white;
 
     background-color: $color-wrapper-text;
   }
+
 }

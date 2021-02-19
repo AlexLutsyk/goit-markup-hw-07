@@ -14,21 +14,21 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    &-accent{
+    &__accent{
         color: $color-accent;
     }
   }
 
-  .nav-list {
+  .site-nav__list {
     display: flex;
     margin: 0;
     padding: 0;
 
-    & .nav-items:not(:last-child){
+    .site-nav__items:not(:last-child){
       margin-right: 50px;
     }
 
-    & .nav-link {
+    .site-nav__link {
       display: block;
       position: relative;
       padding-top: 32px;
@@ -51,19 +51,19 @@
 
   .adress {
     margin-left: auto;
-    &-list {
+    &__list {
       display: flex;
       align-items: center;
       margin: 0;
       padding: 0;
+    }
 
-      .adress-items:not(:last-child) {
-        margin-right: 50px;
-      }
+    &__items:not(:last-child) {
+      margin-right: 50px;
     }
   }
 
-  .adress-link {
+  .adress__link {
     display: flex; 
     padding-top: 32px;
     padding-bottom: 32px;
@@ -76,13 +76,13 @@
     letter-spacing: 0.02em;
     transition: color 250ms $cubic;
 
-    .icon-envelope{
+    .adress__icon-envelope{
       display: inline-block;
       margin-right: 10px;
       fill: $color-paragraph;
       transition: fill 250ms $cubic;
     }
-      .icon-smartphone{
+      .adress__icon-smartphone{
       display: inline-block;
       margin-right: 10px;
       fill: $color-paragraph;
